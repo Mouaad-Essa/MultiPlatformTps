@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.nav,
+.footer {
+  font-weight: bold;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.list {
+  overflow-y: scroll;
+  width: 400px;
+  max-height: 200px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(161, 161, 161, 0.324);
+}
+.list li {
+  padding: 8px 15px;
+  position: relative;
+  margin-bottom: 5px;
+  background: #d1d1d1;
+  border-radius: 10px;
+}
+
+.list li::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: #2555bd;
+  left: 2px;
+  top: 12px;
+  position: absolute;
+}
+
+h1 {
+  position: relative;
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+h1::before {
+  content: "";
+  width: 80px;
+  height: 5px;
+  background: #2555bd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 5px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 15px;
+  background: #275dd2;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #5486f2;
+}
+
+input {
+  width: 200px;
+  outline: none;
+  border: 2px solid #868686;
+  border-radius: 10px;
+  padding: 8px 0;
+  margin-right: 10px;
+}
+
+.project-container {
+  overflow-y: scroll;
+  width: 400px;
+  max-height: 250px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(161, 161, 161, 0.324);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project {
+  padding: 5px 15px;
+  position: relative;
+  background: #d1d1d1;
+  border-radius: 10px;
+  position: relative;
+}
+
+.project::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background: #2555bd;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.project p {
+  padding: 5px;
+}
+
+.about {
+  padding: 20px;
+  background: #5086fa;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #2555bd;
+  align-self: self-start;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.info {
+  background: #769cee;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.info .name {
+  font-weight: bold;
+  padding: 5px 0;
+  color: #333;
+  font-size: larger;
+}
+
+.info .more {
+  padding: 10px;
+  color: #ececec;
+}
