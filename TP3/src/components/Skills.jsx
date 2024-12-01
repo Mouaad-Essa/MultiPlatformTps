@@ -28,7 +28,13 @@ function Skills(props) {
       </ul>
       <div>
         {toggle && (
-          <input type="text" name="exp" id="exp" onChange={handleChange} />
+          <input
+            type="text"
+            name="exp"
+            id="exp"
+            placeholder="Compétence"
+            onChange={handleChange}
+          />
         )}
         <button onClick={handleAddSkills}>
           {toggle ? "Ajouter" : "Afficher la zonne de texte"}

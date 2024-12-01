@@ -39,10 +39,17 @@ function Project(props) {
       </div>
       {toggle && (
         <>
-          <input type="text" name="title" id="title" onChange={handleChange} />
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Titre"
+            onChange={handleChange}
+          />
           <input
             type="text"
             name="description"
+            placeholder="Description"
             id="description"
             onChange={handleChange}
           />

@@ -28,7 +28,13 @@ function Experience(props) {
       </ul>
       <div>
         {toggle && (
-          <input type="text" name="exp" id="exp" onChange={handleChange} />
+          <input
+            type="text"
+            name="exp"
+            id="exp"
+            placeholder="Expérience"
+            onChange={handleChange}
+          />
         )}
         <button onClick={handleAddExp}>
           {toggle ? "Ajouter" : "Afficher la zonne de texte"}
